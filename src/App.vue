@@ -1,26 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+  <BarraNavegacao></BarraNavegacao>
+  <Home></Home>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BarraNavegacao from './components/BarraNavegacao.vue';
+import Home from './Home.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'IndexPage',
+  components:{
+    BarraNavegacao,
+    Home
+  },
+
+  data() {
+    return {
+    
+    }
+  },
+  computed: {
+
+   
+  },
+
+  mounted() {
+  },
+
+  methods:{}
 }
 </script>
+<style scoped>
+@keyframes tiltAnimation {
+  from {
+    transform: perspective(700px) rotateY(-10deg);
+  }
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  to {
+    transform: perspective(700px) rotateY(-20deg);
+  }
 }
+
+
 </style>
+
+
