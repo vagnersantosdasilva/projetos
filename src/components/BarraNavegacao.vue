@@ -8,7 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -80,9 +80,10 @@ export default {
 
 <style>
 .navbar {
-  background: #7FD6F6;
-  /*background: transparent;*/
+  /*background: #7FD6F6;*/
+  background: transparent;
   transition: background-color 0.3s;
+  color: white;
 }
 
 .navbar.scrolled {
